@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  <title>Frontend Mentor | Weather app</title>
+
+ 
+</head>
+<body>
+
+  <div class="wrapper">
+
+      <nav class="navbar">
+          <img src="./assets/images/logo.svg" alt="company-log"  class="company-log" id="company_log">
+          <select name="temperature" class="units__selection" id="units__selection">
+            
+             <option value="temperature">Temp</option>
+             <option value="Fahrenheit">Fahr</option>
+          </select>
+      </nav>
+     
+      
+      <section class="search-heading">
+           <h1>How's the sky looking today?</h1>
+
+           <div class="search-action">
+               <input type="search" name="search" id="search_input" placeholder="search for a place">
+               <button type="button" class="search_button" id="search_button">Search</button>
+           </div>
+      </section>
+
+      <section class="main-weather-section">
+           <div class="main-weather-section__left">
+                 <h3>Berline, Germany</h3>
+                 <p>Tuesday, Aug 5, 2025</p>
+           </div>
+           <div class="main-weather-section__right">
+               <img src="./assets/images/icon-sunny.webp" width="100" height="100" />
+               <h1>20°</h1>
+           </div>
+           
+         
+      </section>
+
+      <section class="temp-details-section">
+          <div class="temp-details-pill">
+            <p>Feels Like</p>
+            <h3>18°</h3>
+          </div>
+           <div class="temp-details-pill">
+            <p>Humidity</p>
+            <h3>46 %</h3>
+          </div>
+           <div class="temp-details-pill">
+            <p>Wind</p>
+            <h3>14 Km/h</h3>
+          </div>
+           <div class="temp-details-pill">
+            <p>Precipitation</p>
+            <h3>0 mm</h3>
+          </div>
+      </section>
+       
+      <div class="forcast-heading">
+         <h2>Daily Forecast</h2>
+      </div>
+
+      <section class="daily-forcast-section">
+       
+        <div class="temp-forecast-pill">
+          <p>Tue</p>
+          <img src="./assets/images/icon-partly-cloudy.webp" alt="partly-cloudy" width="50">
+          <div>
+            <span>20°</span>
+            <span>14°</span>
+          </div>
+        </div>
+        <div class="temp-forecast-pill">
+          <p>Wed</p>
+           <img src="./assets/images/icon-storm.webp" alt="partly-cloudy" width="50">
+          <div>
+            <span>20°</span>
+            <span>14°</span>
+          </div>
+        </div>
+        <div class="temp-forecast-pill">
+          <p>Thu</p>
+           <img src="./assets/images/icon-sunny.webp" alt="partly-cloudy" width="50">
+          <div>
+            <span>20°</span>
+            <span>14°</span>
+          </div>
+        </div>
+        <div class="temp-forecast-pill">
+          <p>Fri</p>
+          <img src="./assets/images/icon-rain.webp" alt="partly-cloudy" width="50">
+          <div>
+            <span>20°</span>
+            <span>14°</span>
+          </div>
+        </div>
+        <div class="temp-forecast-pill">
+          <p>Sat</p>
+          <img src="./assets/images/icon-snow.webp" alt="partly-cloudy" width="50">
+          <div>
+            <span>20°</span>
+            <span>14°</span>
+          </div>
+        </div>
+        <div class="temp-forecast-pill">
+          <p>Sun</p>
+          <img src="./assets/images/icon-fog.webp" alt="partly-cloudy" width="50">
+          <div>
+            <span>20°</span>
+            <span>14°</span>
+          </div>
+        </div>
+        <div class="temp-forecast-pill">
+          <p>Mon</p>
+           <img src="./assets/images/icon-drizzle.webp" alt="partly-cloudy" width="50">
+          <div>
+            <span>20°</span>
+            <span>14°</span>
+          </div>
+        </div>
+      
+      </section>
+   
+
+
+  </div>
+
+  
+
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+/* =========================
+   DM Sans Font Faces
+   ========================= */
+
+/* Light - 300 */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/static/DMSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium - 500 */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold - 600 */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/static/DMSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SemiBold Italic - 600 */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/static/DMSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold - 700 */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../assets/fonts/DM_Sans/static/DMSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color:'#3333';
+    --text-color:'#222';
+    --bg-color:'#fff';
+    --neutral-900:hsl(243, 96%, 9%);
+    --neutral-800:hsl(243, 27%, 20%);
+    --neutral-700:hsl(243, 23%, 24%);
+    --neutral-600:hsl(243, 23%, 30%);
+    --neutral-300:hsl(240, 6%, 70%);
+    --neutral-200:hsl(250, 6%, 84%);
+    --neutral-0:hsl(0, 0%, 100%);
+    /* Orange */
+    --orange-500:hsl(28, 100%, 52%);
+    /* Blue */
+    --blue-500:hsl(233, 67%, 56%);
+    --blue-700:hsl(248, 70%, 36%);
+}
+
+html, body {
+    min-width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family:'DM Sans',sans-serif;
+    font-weight: 700;
+    background-color: var(--neutral-900);
+    
+}
+
+
+.wrapper {
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    width:65%;
+    margin: 0 auto;
+    padding: 2rem 0px;
+    grid-row-gap: 1.5rem;
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1/13;
+}
+
+.navbar .units__selection {
+  width: 100px;
+  outline: 0;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--neutral-800);
+  color: var(--neutral-200);
+  padding: 10px;
+}
+
+.search-heading {
+    grid-column: 1 / 13;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.search-heading h1 {
+  color:var(--neutral-0);
+  font-size: 3rem;
+}
+.search-action {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.search-action input[type="search"] {
+  background-color:var(--neutral-800);
+  padding: 15px;
+  width: 530px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.search_button {
+      padding: 18px;
+    width: 100px;
+    border-radius: 8px;
+    background: #272541;
+    color: #ffff;
+    font-weight: 500;
+    border: navajowhite;
+}
+
+.search_button:hover {
+  background-color: var(--blue-500);
+  cursor: pointer;
+}
+
+.main-weather-section {
+ grid-column: 1 / 9;
+    background: url(../assets/images/bg-today-large.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 335px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+}
+.main-weather-section__left  h3 {
+    font-size: 1.3rem;
+    color: var(--neutral-0);
+    margin-bottom: 0.5rem;
+}
+
+.main-weather-section__left  p {
+  color: var(--neutral-0);
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.main-weather-section__right {
+   display:flex;
+   align-items: center;
+}
+.main-weather-section__right > h1{
+   font-size: 5rem;
+   font-style: italic;
+   color: var(--neutral-0);
+}
+.temp-details-section {
+  grid-column: 1/9;
+}
+.temp-details-section {
+    grid-column: 1 / 9;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 0px 8px;
+}
+.temp-details-pill {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  background: var(--neutral-800);
+  border-radius: 8px;
+  padding: 30px 20px;
+  color: var(--neutral-300);
+
+}
+
+.temp-details-pill p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.temp-details-pill h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--neutral-200);
+}
+.forcast-heading {
+   grid-column: 1 / 9;
+   color: var(--neutral-200);
+   padding: 5px;
+  
+}
+.forcast-heading h2{ font-weight: 300; font-size: 1.2rem;}
+
+.daily-forcast-section {
+  grid-column: 1 / 9;
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  padding: 0px 8px;
+}
+.temp-forecast-pill {
+  display: flex;
+  flex-direction: column;
+  background:var(--neutral-800);
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border-radius: 8px;
+  align-items: center;
+  gap:0.8rem;
+    font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--neutral-200);
+}
+.temp-forecast-pill > div {
+  display: flex;
+  gap: 1rem;
+}
