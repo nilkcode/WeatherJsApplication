@@ -86,13 +86,14 @@ html, body {
 
 
 .wrapper {
-    display:grid;
+      display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
-    width:65%;
+    width: 64%;
     margin: 0 auto;
     padding: 2rem 0px;
     grid-row-gap: 1.5rem;
+    grid-column-gap: 1.5rem;
   }
 
 .navbar {
@@ -158,16 +159,18 @@ html, body {
 }
 
 .main-weather-section {
- grid-column: 1 / 9;
+     grid-column: 1 / 9;
     background: url(../assets/images/bg-today-large.svg);
     background-repeat: no-repeat;
-    background-position: center;
-    height: 335px;
+    height: 287px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 35px;
 }
+
+
+
 .main-weather-section__left  h3 {
     font-size: 1.3rem;
     color: var(--neutral-0);
@@ -197,7 +200,6 @@ html, body {
     display: flex;
     justify-content: space-around;
     gap: 1rem;
-    padding: 0px 8px;
 }
 .temp-details-pill {
   display: flex;
@@ -227,14 +229,14 @@ html, body {
    padding: 5px;
   
 }
-.forcast-heading h2{ font-weight: 300; font-size: 1.2rem;}
+.forcast-heading h2{ font-weight: 400; font-size: 1.2rem;}
 
 .daily-forcast-section {
   grid-column: 1 / 9;
   display: flex;
   justify-content: space-around;
   gap: 1rem;
-  padding: 0px 8px;
+ 
 }
 .temp-forecast-pill {
   display: flex;
@@ -246,11 +248,58 @@ html, body {
   border-radius: 8px;
   align-items: center;
   gap:0.8rem;
-    font-size: 0.8rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--neutral-200);
 }
 .temp-forecast-pill > div {
   display: flex;
   gap: 1rem;
+}
+
+.hourly-forcast-section {
+  grid-column: 9 / -1;
+  grid-row: 3 / 7;
+  background: var(--neutral-800);
+  gap: 1rem;
+  border-radius: 16px;
+  height: 100%;
+  padding: 1rem;
+}
+.hourly-forcast-section > div {
+  width: 100%;
+}
+
+.hourly-forcast-heading h2 {
+  color: var(--neutral-200);
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.hourly-forcast-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.hourly-forcast-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+.hourly-forecast-pill {
+  background-color:var(--neutral-700);
+  box-shadow: 0 0 0 1px var(--neutral-600);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+  color: var(--neutral-200);
+  
+}
+.hourly-forecast-pill > div {
+  display: flex;
+  align-items: center;
+  gap: 0.50rem;
 }
